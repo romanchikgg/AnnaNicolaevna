@@ -1,0 +1,7 @@
+while True:
+  code = input("Введите PIN-код: ")
+  if code == "0007":
+    print("Доступ получен")
+    break
+  else:
+    print("В доступе отказ")
