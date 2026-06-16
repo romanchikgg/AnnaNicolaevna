@@ -1,0 +1,15 @@
+s = input()
+parts = s.split(".")
+if len(parts) != 4:
+    print("Heт")
+else:
+    valid = True
+    for part in parts:
+        if not part.isdigit():
+            valid = False
+            break
+        num = int(part)
+        if num < 0 or num > 255:
+            valid = False
+            break
+    print("Дa" if valid else "HeТ")
