@@ -1,0 +1,7 @@
+word = input("Вашите слово: ")
+original_list = list(word)
+reserved_list = original_list[::-1]
+if original_list == reserved_list:
+    print("Это палиндром")
+else:
+    print("Не палиндром")
