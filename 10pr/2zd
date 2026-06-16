@@ -1,4 +1,3 @@
-python
 first_num = int(input("Введите первое число: "))
 while True:
     second_num = input("Введите второе число:")
