@@ -1,0 +1,6 @@
+n = int(input())
+symbols = []
+for _ in range(n):
+    line = input()
+    symbols.extend(line)
+print(symbols)
