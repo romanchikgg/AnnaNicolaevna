@@ -1,0 +1,31 @@
+number = input()
+
+digits = list(map(int, number))
+last_digit = digits[-1]
+
+count_3 = digits.count(3)
+
+count_last_digit = digits.count(last_digit)
+
+count_even = sum(d % 2 == 0 for d in digits)
+
+sum_greater_five = sum(d for d in digits if d > 5)
+
+greater_seven = [d for d in digits if d > 7]
+if len(greater_seven) == 0:
+    product_greater_seven = 1
+elif len(greater_seven) == 1:
+    product_greater_seven = greater_seven[0]
+else:
+    product_greater_seven = 1
+    for d in greater_seven:
+        product_greater_seven *= d
+
+count_zero_five = digits.count(0) + digits.count(5)
+
+print(count_3)
+print(count_last_digit)
+print(count_even)
+print(sum_greater_five)
+print(product_greater_seven)
+print(count_zero_five)
