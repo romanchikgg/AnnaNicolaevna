@@ -1,0 +1,7 @@
+import random
+
+list = [[random.randint(0, 99) for _ in range(random.randint(3, 6))] for _ in range(random.randint(3, 6))]
+[print(f'{i}: {row}') for i, row in enumerate(list)]
+
+pos = max([(val, i, j) for i, row in enumerate(list) for j, val in enumerate(row)], key=lambda x: x[0])
+print(f'\nМаксимум: {pos[0]} Позиция: строка {pos[1]}, индекс {pos[2]}')
