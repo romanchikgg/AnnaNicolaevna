@@ -1,0 +1,10 @@
+n = int(input('Введите натуральное число n: '))
+
+current_number = 1
+
+while current_number <= n:
+    if (3 <= current_number <= 7) or (15 <= current_number <= 35) or (67 <= current_number <= 78):
+        current_number += 1
+    else:
+        print(f'Вывод: {current_number}')
+        current_number += 1
