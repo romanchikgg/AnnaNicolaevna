@@ -1,0 +1,12 @@
+allowed_input = "10 20 30"
+incoming_input = "20 40 10 50"
+
+allowed_ids = set(allowed_input.split())
+incoming_ids = incoming_input.split()
+
+for id in incoming_ids:
+    if id in allowed_ids:
+        print("OK")
+    else:
+        print("ADDED")
+        allowed_ids.add(id)
