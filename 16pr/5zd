@@ -1,0 +1,16 @@
+log1 = input().split()
+log2 = input().split()
+log3 = input().split()
+
+all_ips = log1 + log2 + log3
+
+result = []
+
+for ip in set(all_ips):
+    count = all_ips.count(ip)
+    if count < 3:
+        result.append(ip)
+
+result.sort()
+
+print(' '.join(result))
