@@ -1,0 +1,5 @@
+A = [random.randint(1, 100) for _ in range(5)]
+print("Исходный список:", A)
+min_index = A.index(min(A))
+A[0], A[min_index] = A[min_index], A[0]
+print("Измененный список:", A)
