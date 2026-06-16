@@ -1,0 +1,12 @@
+total_days = 365
+solutions = []
+
+for n in range(1, 13):  # n-месяцы по 28 дней
+    for k in range(1, 13):  # k-месяцы по 30 дней
+        for m in range(1, 13):  # m-месяцы по 31 день
+            if 28*n + 30*k + 31*m == total_days:
+                solutions.append((n, k, m))
+
+# Вывод всех решений
+for sol in solutions:
+    print(f"n={sol[0]}, k={sol[1]}, m={sol[2]}")
