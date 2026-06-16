@@ -1,0 +1,8 @@
+files_a = set("data.db image.png log.txt".split())
+files_b = set("image.png script.py data.db".split())
+
+common_files = files_a & files_b
+lost_files = files_a - files_b
+
+print("Общие:", ' '.join(sorted(common_files)))
+print("Потерянные:", ' '.join(sorted(lost_files)))
