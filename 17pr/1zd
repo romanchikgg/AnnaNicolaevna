@@ -1,0 +1,10 @@
+def get_days(month):  # 3 usages
+    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if 1 <= month and month <= 12:
+        return days_in_month[month - 1]
+    else:
+        return None
+
+print(get_days(1))
+print(get_days(2))
+print(get_days(9))
