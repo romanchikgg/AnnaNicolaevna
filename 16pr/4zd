@@ -1,0 +1,9 @@
+cia = set("Bond Smith Hunt".split())
+mi6 = set("Bond Power Hunt".split())
+kgb = set("Petrov Hunt Ivanov".split())
+
+double_agents = (cia & mi6) - kgb
+
+sorted_agents = sorted(double_agents, reverse=True)
+
+print(' '.join(sorted_agents))
