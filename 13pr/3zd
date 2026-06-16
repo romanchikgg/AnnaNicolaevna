@@ -1,0 +1,4 @@
+path = input()
+parts = path.split("\n")
+for part in parts:
+    print(part)
