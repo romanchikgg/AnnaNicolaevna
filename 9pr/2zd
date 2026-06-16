@@ -1,0 +1,15 @@
+counter = 0
+position_roman = 0
+position_matvey = 0
+
+while True:
+    name = input()
+    counter += 1
+    if name == "РОМАН":
+        position_roman = counter
+    elif name == "МАТВЕЙ":
+        position_matvey = counter
+    if (position_roman != 0) and (position_matvey != 0):
+        break
+
+print(max(0, position_matvey - position_roman - 1))
