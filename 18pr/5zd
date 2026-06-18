@@ -1,0 +1,11 @@
+class Monster:
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self):
+        print(f"Я {self.name}, и я хочу кушать!")
+
+m = Monster("Упырь")
+m.introduce()
+
+Ошибка была в 5 строке, заменил name на self, чтобы обращаться к атрибутам.
